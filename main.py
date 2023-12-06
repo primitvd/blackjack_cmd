@@ -1,12 +1,11 @@
 import  random
+set_cards = ["A",2,3,4,5,6,7,8,9,10,"J","Q","K"]
 
 def give_card():
-    set_cards = ["A",2,3,4,5,6,7,8,9,10,"J","Q","K"]
     return random.choice(set_cards)
 
 def score_check(cards):
     score = 0
-    set_cards = ["A",2,3,4,5,6,7,8,9,10,"J","Q","K"]
     for card in cards:
         if card == "J" or card == "Q" or card == "K":
             score += 10
